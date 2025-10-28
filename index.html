@@ -4,46 +4,91 @@
   <meta charset="utf-8">
   <meta name="author" content="Orzu Nazarov">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Content — Markup Assignment</title>
+  <title>zyBooks — Module Notes (Part Three)</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- This comment is required by the assignment -->
+  <!-- Assignment comment: Part Three content - module titles and zyBooks text inserted -->
   <header>
-    <h1>Project: Marking Up My Content</h1>
-    <p>Follow these steps to create and mark up your HTML file in VS Code.</p>
+    <h1>Module Notes — Introduction to Web Programming &amp; HTML</h1>
+    <p>Selected content and short explanations taken from zyBooks modules for use in the assignment. :contentReference[oaicite:0]{index=0}</p>
   </header>
 
   <main>
     <section>
-      <h2>Create the file</h2>
-      <p>Open VS Code and create a new file using the keyboard shortcut <code>Control/Command + N</code>.<br>
-      Save the file as <code>index.html</code> in your project folder.</p>
+      <h2>Module 1: Introduction to Web Programming &amp; Version Control</h2>
 
-      <p>Make sure you add the basic HTML skeleton (doctype, html, head, body). Use the meta author tag with your name. <mark>Author:</mark> Orzu Nazarov.</p>
+      <h3>1.1 Web history</h3>
+      <p><strong>Internet</strong><br>
+      The internet began as four networked computers in 1969. Today, the internet is the largest and most popular computer network, spanning the entire globe.</p>
 
-      <p>Under your title and other meta tags, link to the stylesheet with <code>styles.css</code>. <mark>Example:</mark> the <code>&lt;link&gt;</code> element in the head. <br></p>
+      <p><strong>FTP / File Transfer Protocol</strong><br>
+      FTP (File Transfer Protocol) was an early way to transfer files over the internet.</p>
+
+      <p><strong>World Wide Web / web</strong><br>
+      In the early 1990s Tim Berners-Lee (at CERN) developed the World Wide Web — a convenient way for computers to communicate and link documents. A webpage is a document viewed in a web browser; related webpages form a website. A web server is a program that serves webpages to browsers. HTML (HyperText Markup Language) is the standard markup language for web documents. Hypertext contains links to other text, images, or media; markup adds structure and metadata for formatting and links. :contentReference[oaicite:1]{index=1}</p>
+
+      <p><strong>Web browser, W3C, WHATWG</strong><br>
+      A web browser downloads HTML from a web server and displays it. The World Wide Web Consortium (W3C) and the WHATWG are organizations that develop and maintain web standards; WHATWG now produces the HTML Living Standard. :contentReference[oaicite:2]{index=2}</p>
+
+      <p><em>Notes:</em> figures and animations in the zyBooks chapter illustrate early web pages, the web’s "spider-web" interconnections, and browser timelines.</p>
+
+      <h3>1.2 IP addresses, domain names, and URLs</h3>
+      <p><strong>Packet &amp; IP address</strong><br>
+      An internet packet contains source/destination IP addresses plus data. An IP address uniquely identifies a device on the internet (e.g., 198.51.100.7). IPv4 uses 32-bit addresses; IPv6 uses 128-bit addresses. :contentReference[oaicite:3]{index=3}</p>
+
+      <p><strong>Domain name &amp; DNS</strong><br>
+      A domain name (like wikipedia.org) maps to an IP address via DNS. Root DNS servers are authoritative entry points; registrars sell domain names. Top-level domains (TLDs) include .com, .net, .org and country codes like .uk, .ru. :contentReference[oaicite:4]{index=4}</p>
+
+      <p><strong>URL parts</strong><br>
+      A URL (Uniform Resource Locator) includes a scheme (http:// or https://), hostname (domain), path (folders/files), optional query string (after ?), and optional fragment (after #). If a server is reached but the resource isn't found, the server returns a 404 status code (page not found). Linkrot is when previously valid links return 404. :contentReference[oaicite:5]{index=5}</p>
+
+      <h3>1.3 HTTP</h3>
+      <p><strong>HTTP &amp; related protocols</strong><br>
+      HTTP (HyperText Transfer Protocol) runs over TCP/IP and governs browser–server communication. HTTP/1.1 was long-standing; HTTP/2 improves speed and many sites use it; HTTP/3 (using UDP) is the next evolution. A browser performs a DNS lookup, sends an HTTP request, and receives an HTTP response which often contains the requested resource. :contentReference[oaicite:6]{index=6}</p>
+
+      <p><strong>Headers, status codes, caching</strong><br>
+      HTTP requests and responses include start lines, header fields, and (optionally) message bodies. Status codes (e.g., 200, 301, 404) indicate result. Caching uses headers like Expires, Cache-Control, and ETags; DevTools can inspect requests/responses. HTTPS secures HTTP with TLS and digital certificates from certificate authorities. :contentReference[oaicite:7]{index=7}</p>
+
+      <h3>1.4 Web trends</h3>
+      <p>Important trends include mobile devices, the Internet of Things (IoT), web accessibility (making sites usable for people with disabilities), cognitive computing (AI), and the design principle of separation of concerns (structure, presentation, interaction). :contentReference[oaicite:8]{index=8}</p>
+
+      <h3>1.5–1.8 Tools &amp; workflow</h3>
+      <p>VS Code installation and extensions, Git &amp; GitHub version control, the GitHub workflow, and publishing with GitHub Pages (repository -> Pages settings) are covered in the module. :contentReference[oaicite:9]{index=9}</p>
     </section>
 
     <section>
-      <h2>Paste your content</h2>
-      <p>Open the text document that contains your content. Select all with <code>Control/Command + A</code>, copy with <code>Control/Command + C</code>, then paste into the &lt;body&gt; of your HTML file.</p>
+      <h2>Module 2: Introduction to HTML</h2>
 
-      <p>Now mark up the paragraphs using semantic tags: wrap the title in an <strong>&lt;h1&gt;</strong>, group related material in <em>&lt;section&gt;</em> elements, and use <b>emphasis</b> or <i>italics</i> where appropriate to show importance or tone.</p>
+      <h3>2.1 HTML document structure</h3>
+      <p><strong>HTML (HyperText Markup Language)</strong><br>
+      HTML is a textual language for creating webpages. An element is an HTML structure; tags mark start/end. The minimum document includes <code>&lt;!DOCTYPE html&gt;</code>, an <code>&lt;html&gt;</code> element, a <code>&lt;head&gt;</code> (meta, title), and a <code>&lt;body&gt;</code> with renderable content. Use UTF-8 encoding and validate markup to avoid quirks mode. :contentReference[oaicite:10]{index=10}</p>
 
-      <p>Remember accessibility: use headings in order and meaningful text in links and images. <mark>Accessibility matters.</mark><br></p>
+      <h3>Selected topic notes (2.2–2.8)</h3>
+      <p><strong>Meta tags</strong><br>
+      Meta elements provide metadata (charset, author, viewport) and should appear in the head in a recommended order.</p>
+
+      <p><strong>&lt;script&gt; and &lt;style&gt;</strong><br>
+      Use <code>&lt;script&gt;</code> to include executable JS (or reference via <code>src</code>), and <code>&lt;style&gt;</code> for embedded CSS. Prefer external files for separation of concerns.</p>
+
+      <p><strong>Comments &amp; developer guidelines</strong><br>
+      HTML comments are not shown in browsers. Follow developer guidelines: close tags properly, use lowercase, quote attribute values, indent nested elements, and separate structure from presentation. Use validators to check correctness. :contentReference[oaicite:11]{index=11}</p>
+
+      <p><strong>Containers: block vs inline</strong><br>
+      A container is any element with opening and closing tags. Block elements fill parent width and can contain blocks and inline elements; inline elements take only needed space and typically contain text or other inline elements. Understanding hierarchy (parent/child) is important for layout. :contentReference[oaicite:12]{index=12}</p>
     </section>
 
     <section>
-      <h3>Final formatting & small markup details</h3>
-      <p>Use inline <code>&lt;code&gt;</code> tags to show filenames or commands in documentation. Use <mark>highlight</mark> when you need to call attention to specific words.</p>
+      <h2>How to use these notes</h2>
+      <p>Paste this content into your <code>index.html</code> and mark it up semantically as required by your assignment (header, main, three sections, footer, appropriate heading levels, paragraphs, and inline tags). Use the linked <code>styles.css</code> to format the page for submission.</p>
 
-      <p>If your original text includes citations, add them with a <cite>cite element</cite> or create a reference list in the footer. <br><br></p>
+      <p>Suggested commit message:<br>
+      <code>git commit -m "Add zyBooks Module 1 &amp; 2 notes to index.html (Part Three)"</code></p>
     </section>
   </main>
 
   <footer>
-    <p>References: see your project document for sources; include citations inside the footer when required. <cite>Example source: Student Project Document</cite></p>
+    <p>Source: zyBooks — Web Programming / Introduction to HTML modules. :contentReference[oaicite:13]{index=13}</p>
   </footer>
 </body>
 </html>
