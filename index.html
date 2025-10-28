@@ -8,44 +8,72 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
-    <header class="site-header">
-      <h1 class="main-title">Basic HTML Text Tags</h1>
-    </header>
+  <header>
+    <h1><strong>Common HTML Text Elements</strong></h1>
+  </header>
 
-    <main class="content">
-      <section class="block">
-        <h2 class="section-title">Marking up Text in Blocks</h2>
+  <main>
+    <section>
+      <h2><strong>Writing Text in Paragraphs</strong></h2>
+      <p>
+        When text appears in a block with several lines, it’s treated as a paragraph. Paragraphs can hold phrases or words that are emphasized or styled in different ways. 
+        They can also include links or other inline elements — but not headings. 
+        <em>Paragraphs are considered block-level elements.</em>
+      </p>
 
-        <p>When text appears in a block with several lines, it is a paragraph. Paragraphs can contain
-        <strong>important</strong> words, <em>emphasized</em> phrases, and inline code like <code>&lt;code&gt;</code>.</p>
+      <p>
+        Sometimes, you might need to display text that needs a specific layout, like poetry. In that case, you can use line break tags to control where the lines end. 
+        <strong>These tags should only</strong> be used for special formatting, such as poems or addresses. Avoid adding line breaks inside normal paragraphs or forms — use CSS instead for proper styling.
+      </p>
 
-        <p>For short poems or preformatted lines use line breaks (<code>&lt;br&gt;</code>) or a dedicated element — but prefer CSS for layout.</p>
-      </section>
+      <p>
+        Keep in mind that tags like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> are used to express meaning in text, not just to make words look 
+        <b>bold</b> or <i>italicized</i>.
+      </p>
+    </section>
 
-      <section class="excerpt">
-        <h3 class="excerpt-title"><a href="#" class="excerpt-link">Excerpt from <em>The Raven</em> — Edgar Allan Poe</a></h3>
+    <section>
+      <h2><em>Excerpt from</em> <strong>The Raven – a Poem by Edgar Allan Poe</strong></h2>
 
-        <p class="poem">
-          Once upon a midnight dreary, while I pondered, weak and weary,<br>
-          Over many a quaint and curious volume of forgotten lore—<br>
-          <span class="poem-indent">While I nodded, nearly napping, suddenly there came a tapping,</span><br>
-          <span class="poem-indent">“’Tis some visitor,” I muttered, “tapping at my chamber door—”</span>
-        </p>
-      </section>
+      <p>
+        Once upon a midnight dreary, while I pondered, weak and weary,<br>
+        Over many a quaint and curious volume of forgotten lore—<br>
+        While I nodded, nearly napping, suddenly there came a tapping,<br>
+        As of someone gently rapping, rapping at my chamber door.<br>
+        “’Tis some visitor,” I murmured, “knocking at my chamber door—<br>
+        Nothing more and nothing less.”
+      </p>
+    </section>
 
-      <section class="meaning">
-        <h2 class="section-title">Marking Up Text to Convey Meaning</h2>
+    <section>
+      <h2><strong>Using Text to Communicate Meaning</strong></h2>
 
-        <p>Use the correct tag to show meaning. For example, highlight search terms with <mark>focus area</mark> or show small emphasis with <b>bold</b> and <i>italic</i>.</p>
+      <p>
+        Sometimes, only part of a sentence — a few words or letters — needs special meaning. 
+        In those cases, it’s best to choose the most descriptive HTML tag for the purpose.
+      </p>
 
-        <p>Keep content accessible and well-structured for screen readers and good HTML practice.</p>
-      </section>
-    </main>
+      <p>
+        For instance, on a page that displays search results, you may want to highlight words that match the user’s search. 
+        If someone searched for “focus area,” that phrase should appear highlighted when shown in the results.
+      </p>
 
-    <footer class="site-footer">
-      <p>Copyright © 2025</p>
-    </footer>
-  </div>
+      <p>
+        The main <mark>focus area</mark> should come from one of four GIT <mark>focus areas</mark> 
+        (Front-end Web Development; Photography and Video; Digital Design; or Animation and Publishing). 
+        A secondary <mark>focus area</mark> can be any subject that helps support the student’s learning path.
+      </p>
+
+      <p>
+        Earlier, we mentioned the <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> tags, but not <code>&lt;u&gt;</code>. 
+        The underline tag is less common because it can make text look like a hyperlink. 
+        A better use is marking <u>spelling</u> or typing mistakes.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2023</p>
+  </footer>
 </body>
 </html>
